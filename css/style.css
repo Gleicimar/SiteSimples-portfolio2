@@ -1,0 +1,236 @@
+/**===============reset======*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+   }
+   .clea{
+clear: both;
+   }
+   /*==============Header==============*/
+header{
+    width: 100%;
+    padding: 40px 0;
+    /*background-image: ;*/
+    background-size: cover;
+    background-position: center;
+    background-color: darkmagenta;
+    min-height: 600px;
+}
+
+header .center{
+    display: flex;
+    justify-content: space-between;
+    /*align-items: ;*/
+    position: relative;
+}
+header nav.menu ul{
+    list-style-type: none;
+    display: flex;
+    top:10px;
+    position:relative;
+}
+
+header nav.menu li{
+    padding: 0 25px;
+    color:white;
+}
+
+header nav.menu a{
+ text-decoration: none;
+ color: inherit;
+ font-size: 23px;
+}
+
+header .chamada{
+width: 100%;
+max-width: 600px;
+    position:absolute;
+    display: flex;
+    margin: 150px
+}
+
+header  .chamada h2{
+font-size: 35px;
+padding:  50px;;
+color:gainsboro
+}
+header   .logo{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 37px;
+}
+/*===============Tecnologias===============*/
+section.tecnologias{
+    background-color: rgb(124, 62, 185);
+    text-align:center;
+}
+section.tecnologias h2{
+ color:snow;
+ font-size: 30px;
+}
+section.tecnologias p{
+    display: inline-block;
+max-width: 400px;
+width:100%;
+}
+section.tecnologias  .center{
+display: flex;
+    width:100%;
+    padding: 60px  2%;
+}
+div.tec-wraper{
+    width:33.3%;
+    padding:0  30px;
+    margin:0 30px;
+}
+ div.tec  svg{
+    width: 100%;
+    height: 300px;
+    color:red
+}
+
+/*=================Serviços===================*/
+section.servicos{
+    padding: 60px 2%;
+    width: 100%;
+background-color: silver;
+/* display: flex;*/
+    text-align:left
+
+}
+
+section.servicos .servicos-list h2{
+    text-align:center ;
+    color:snow;
+    font-size: 30px;
+}
+
+section.servicos .servicos-list ul {
+    margin: 40px;
+    font-size: 24px;
+    list-style: inside;
+    font-weight: normal;
+    color:white;
+    font-style: oblique;
+    list-style-position: outside
+}
+
+section.servicos .servicos-list  button{
+    margin-top: 22px;
+    text-transform: uppercase;
+    height:45px;
+    line-height: 45px;
+    font-size: 20px;
+    border-radius: 15px;
+    width:250px;
+    border: 0;
+    color:white;
+    background-color: steelblue;
+}
+/*==========Contato===================*/
+section.contato{
+    padding:60px 0;
+    background-color: whitesmoke;
+    text-align: center;
+}
+section.contato form{
+width: 100%;
+max-width: 700px;
+display: inline-block;
+}
+section.contato input:focus{
+outline: 0;
+}
+section.contato input{
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    max-width: 700px;
+    line-height: 45px;
+    padding-left: 10px;
+    border-radius: 22px;
+    font-size: 18px;
+}
+textarea{
+resize: none;
+padding-left:12px;
+width: 100%;
+max-width: 700px;
+height:300px;
+margin-top: 15px;
+}
+section.contato input[type=submit]{
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    background-color: tomato;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-radius: 22px;
+    font-size: 18px;
+    width:100%;
+    border: 0;
+    max-width: 200px;
+}
+
+/*============Footer================*/
+footer{
+    padding:40px 0;
+    background-color: rgb(2, 138, 138);
+    text-align: center;
+}
+footer p{
+color:white;
+font-size: 19px;
+font-style: italic;
+}
+
+footer.footer2{
+background-color: rgb(0, 70, 70);
+height: 40px;
+}
+@media screen  and (max-width: 768px){
+
+    header .logo{
+width:150px;
+    }
+    header nav.menu ul{
+        display: none;
+    }
+    header .chamada{
+place-items: center;
+margin:150px  0;
+padding: 0 ;
+
+}
+header  .chamada h2{
+    font-size: 25px;
+    padding:  0;
+    }
+    section.servicos .servicos-list .center{
+        display: flex;
+        flex-direction: column;
+    }
+
+section.servicos .servicos-list  button{
+    place-items: center;
+    display: inline-block;
+}
+section.tecnologias  .center{
+    display: flex;
+        flex-direction: column;
+        place-items: center;
+
+flex-wrap: wrap;
+}
+div.tec-wraper{
+width: 100%;
+margin:0;
+}
+}
